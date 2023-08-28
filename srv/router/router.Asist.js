@@ -1,12 +1,12 @@
 const { Router } = require("express");
 
-const { confirmarAisit } = require('../controllers/Asist.controllers')
+const asistCtrl = require('../controllers/Asist.controllers')
 
 const router = Router();
 
 // Rutas para Crear Usuarios
 
-router.get('/NewUser', confirmarAisit );
+router.post('/NewUser', asistCtrl.confirmarAisit );
 
 // Rutas para Eliminar usuario
 router.get('/api/:id', );
